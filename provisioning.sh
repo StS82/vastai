@@ -23,7 +23,7 @@ cat > /workspace/kohya_ss.sh<< EOF
 #!/bin/bash
 source /venv/main/bin/activate
 cd /workspace/kohya_ss
-python3 kohya_gui.py --listen=0.0.0.0 --headless --noverify
+python3 kohya_gui.py --listen=0.0.0.0 --headless --noverify --server_port 7860
 EOF
 chmod +x /workspace/kohya_ss.sh
 
