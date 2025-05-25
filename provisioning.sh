@@ -20,7 +20,7 @@ wget -P "${WORKSPACE}/kohya_ss/models" https://huggingface.co/stabilityai/stable
 
 # Set up any additional services
 cat > /etc/supervisor/conf.d/kohya_ss.conf<< EOF
-command=. /venv/main/bin/activate && cd /workspace/kohya_ss && python3 /workspace/kohya_ss/kohya_gui.py --listen=0.0.0.0 --headless --noverify
+command=". /venv/main/bin/activate && cd /workspace/kohya_ss && python3 /workspace/kohya_ss/kohya_gui.py --listen=0.0.0.0 --headless --noverify"
 autostart=true
 autorestart=true
 stderr_logfile=/var/log/kohya_ss.err.log
