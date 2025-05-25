@@ -28,8 +28,8 @@ stdout_logfile=/var/log/kohya_ss.out.log
 EOF
 
 # Reconfigure the instance portal
-rm -f /etc/portal.yaml
-export PORTAL_CONFIG="localhost:1111:11111:/:Instance Portal|localhost:7860:7860:/:Kohya_SS"
+#rm -f /etc/portal.yaml
+#export PORTAL_CONFIG="localhost:1111:11111:/:Instance Portal|localhost:7860:7860:/:Kohya_SS"
 
 # Reload Supervisor
 supervisorctl reload
