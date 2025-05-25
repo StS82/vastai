@@ -16,7 +16,7 @@ git checkout dev && git pull
 pip install xformers==0.0.30 && pip install -r requirements.txt && pip install bitsandbytes gradio tensorflow onnxruntime-gpu accelerate==0.30.0 numpy==1.26.4
 
 # Download some useful files
-wget -P "${WORKSPACE}/kohya_ss/models" https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/raw/main/sd_xl_base_1.0_0.9vae.safetensors
+wget -P "${WORKSPACE}/kohya_ss/models" "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0_0.9vae.safetensors?download=true"
 
 # Set up any additional services
 cat > /etc/supervisor/conf.d/kohya_ss.conf<< EOF
